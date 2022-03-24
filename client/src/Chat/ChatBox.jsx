@@ -100,7 +100,7 @@ const ChatBox = (props) => {
   useEffect(() => {
     reloadMessages();
     scrollToBottom();
-  }, [newMessage,lastMessage, props.scope, props.conversationId]);
+  }, [lastMessage, props.scope, props.conversationId]);
 
   useEffect(() => {
     const socket = socketIOClient(process.env.REACT_APP_API_URL);
